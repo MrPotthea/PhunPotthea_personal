@@ -5,8 +5,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    border: 1px solid red;
 }
-
+body{
+    overflow-x: hidden;
+}
 .follow_contact {
     width: 100%;
     display: flex;
