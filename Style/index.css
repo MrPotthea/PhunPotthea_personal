@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Agdasima:wght@400;700&family=Anton&family=Bangers&family=Bayon&family=Bokor&family=Chenla&family=Danfo&family=Fasthand&family=Freehand&family=Ga+Maamli&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jaro:opsz@6..72&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Khmer&family=Koh+Santepheap:wght@100;300;400;700;900&family=Koulen&family=Lilita+One&family=Merienda:wght@300..900&family=Mochiy+Pop+One&family=Moul&family=Noto+Serif+Khmer:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Permanent+Marker&family=Playwrite+AU+SA:wght@100..400&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&family=Rubik+Wet+Paint&family=Saira:ital,wght@0,100..900;1,100..900&family=Sixtyfour+Convergence&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Agdasima:wght@400;700&family=Bangers&family=Bayon&family=Bokor&family=Chenla&family=Danfo&family=Fasthand&family=Freehand&family=Ga+Maamli&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jaro:opsz@6..72&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Khmer&family=Koh+Santepheap:wght@100;300;400;700;900&family=Koulen&family=Lilita+One&family=Merienda:wght@300..900&family=Mochiy+Pop+One&family=Moul&family=Noto+Serif+Khmer:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Permanent+Marker&family=Playwrite+AU+SA:wght@100..400&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&family=Rubik+Wet+Paint&family=Saira:ital,wght@0,100..900;1,100..900&family=Sixtyfour+Convergence&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.follow_contact {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.follow_contact .contact {
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+}
+
+.follow {
+    display: flex;
+    gap: 30px;
+    font-size: 1.3rem;
+}
+
+.follow>a {
+    color: aliceblue;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.follow>a:hover {
+    color: yellow;
+}
+
+.web-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo>h3 {
+    font-family: "Merienda", serif;
+    color: yellow;
+}
+
+.menu {
+    display: flex;
+    gap: 50px;
+}
+
+.menu>a {
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    color: aliceblue;
+    transition: color 0.3s;
+}
+
+.menu>a:hover {
+    color: yellow;
+}
+
+.web-header .menu-list {
+    display: none;
+    font-size: 1.3rem;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .web-header .menu-list {
+        display: flex;
+    }
+
+    #follow_contact {
+        display: none;
+    }
+}
+
+.home_page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.home_page div {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.home_page div>button {
+    width: 20%;
+    padding: 10px;
+    font-family: sans-serif;
+    border: 2px solid white;
+    background-color: goldenrod;
+    color: white;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.home_page div button:hover {
+    transform: translateY(10px);
+    background-color: black;
+}
+
+/* Glowing text effect */
+.glowing-text {
+    font-size: 100px;
+    font-family: "Anton", serif;
+    text-transform: uppercase;
+    color: white;
+    /* text-shadow: 0 0 3px #0ff, 0 0 7px #0ff, 0 0 15px #0ff, 0 0 30px #0ff, 0 0 50px #0ff; */
+    transition: transform 0.3s, text-shadow 0.3s;
+}
+
+/* Hover animation */
+.glowing-text:hover {
+    transform: scale(1.05);
+    text-shadow: 0 0 10px #ff0, 0 0 20px #ff0, 0 0 40px #ff0, 0 0 80px #ff0;
+}
+
+/* Gradient animation keyframes */
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .glowing-text {
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .home_page div {
+        height: 70%;
+    }
+
+    .home_page div>button {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .glowing-text {
+        font-size: 1.8rem;
+    }
+
+    .home_page div {
+        height: 60%;
+    }
+}
+.about_me {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    background-color: rgba(22, 21, 21, 0.9);
+    color: aliceblue;
+}
+.about_me h1 {
+    color: rgb(44, 155, 159);
+    font-family: "Anton", serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.about_me .container {
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.about{
+    padding: 20px;
+}
+.about p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.list_skills {
+    padding: 20px;
+    border-radius: 15px;
+}
+.about>h3{
+    font-family: "Anton", serif;
+    color: yellow;
+}
+.list_skills>h3{
+    font-family: "Anton", serif;
+    color: yellow;
+}
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    background-color: rgb(215, 217, 219);
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+.skill img:hover{
+    transform: scale(1.1);
+}
+.skill a {
+    font-size: 16px;
+    font-weight: bold;
+    color: goldenrod;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.skill a:hover {
+    color: #007bff;
+}
+.img{
+    margin-bottom: 50px;
+}
+.img img {
+    max-width: 200px;
+    border-radius: 50%;
+    background-color: yellow;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.about_follow p {
+    margin: 10px 0;
+}
+
+.about_follow a {
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.about_follow a:hover {
+    color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .about_me{
+        height: auto;
+    }
+    .about_me .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img img {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 576px) {
+    .about h1 {
+        font-size: 1.8rem;
+    }
+    .about{
+        padding: 0;
+    }
+    .about p {
+        font-size: 0.9rem;
+    }
+
+    .skill img {
+        width: 50px;
+        height: 50px;
+    }
+    .list_skills{
+        padding: 0;
+    }
+    .skill a {
+        font-size: 14px;
+    }
+
+    .img img {
+        max-width: 100px;
+    }
+}
+.contact_me {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    background-color: rgba(22, 21, 21, 0.9);
+    color: aliceblue;
+}
+.contact_me h1 {
+    color: rgb(44, 155, 159);
+    font-family: "Anton", serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.contact-info,
+.contact-form {
+    border-radius: 8px;
+    box-shadow: none;
+}
+
+.info-item h4 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #f0a500;
+}
+
+.info-item p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.contact-form .form-control {
+    background: #2d2d2d;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.contact-form .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-form .form-control:focus {
+    border-color: #f0a500;
+    box-shadow: none;
+}
+
+.btn-warning {
+    background: #f0a500;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.btn-warning:hover {
+    background: #d18d00;
+    transform: translateY(-2px);
+}
+   /* Footer Section */
+   .footer {
+    background-color: #000; /* Matches the dark theme */
+    color: #fff;
+}
+
+.footer-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    gap: 15px;
+}
+
+.icon-link {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #333;
+    color: #f0a500;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.icon-link:hover {
+    background-color: #f0a500;
+    color: #000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-title {
+        font-size: 1.2rem;
+    }
+
+    .icon-link {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 0.9rem;
+    }
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    background-color: #ff0;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-item img:hover {
+    transform: scale(1.1);
+  }
+
+  /* Responsive design */
+  @media (max-width: 1200px) {
+    .gallery {
+      grid-template-columns: repeat(3, 1fr); /* 3 items per row on medium screens */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .contact_me{
+        height: auto;
+    }
+    .gallery {
+      grid-template-columns: repeat(2, 1fr); /* 2 items per row on smaller screens */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .contact_me{
+        height: auto;
+    }
+    .gallery {
+      grid-template-columns: 1fr; /* 1 item per row on extra small screens */
+    }
+  }
+  /* Default styles for .menu-hide */
+.menu-hide {
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    display: none;
+    /* Initially hidden */
+    transform: translateY(-10px);
+    /* Slide up effect */
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-hide.show {
+    display: block;
+    /* Show menu */
+    opacity: 1;
+    /* Fade in */
+    transform: translateY(0);
+    /* Slide into view */
+}
+
+/* Styles for menu items */
+.menu-hide>div {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.menu-hide>div:hover {
+    background-color: aliceblue;
+    /* Highlight on hover */
+}
+
+.menu-hide>div>a {
+    color: grey;
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+.menu-hide>#p,
+.menu-hide>#m {
+    color: grey;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+#p:hover,
+#m:hover {
+    background-color: aliceblue;
+    /* Highlight on hover */
+}
+.phone-email {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.follow {
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.follow>a {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
