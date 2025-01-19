@@ -6,9 +6,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    overflow-x: hidden;
-}
+
 .follow_contact {
     width: 100%;
     display: flex;
