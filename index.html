@@ -72,8 +72,8 @@
             <div class="home_page">
                 <div
                     style="background-image: url('Image/360_F_915090726_mCY5HWfbL0IeNv6merJmc1ltACTiqXu0-removebg-preview.png');background-size: cover;background-position: center;background-repeat: no-repeat;">
-                    <h1 class="glowing-text" >Hello,I`m Phun Potthea</h1><br>
-                    <button>Download My CV</button>
+                    <h1 class="glowing-text" data-aos="fade-up" data-aos-delay="500">Hello,I`m Phun Potthea</h1><br>
+                    <button data-aos="fade-up" data-aos="fade-up" data-aos-delay="500">Download My CV</button>
                 </div>
             </div>
         </div>
@@ -109,7 +109,7 @@
                     </div>
                     <!-- About Section -->
                     <div class="col-lg-6 col-md-12 mb-4">
-                        <div class="about">
+                        <div class="about" data-aos="fade-up" data-aos-delay="500">
                             <h3>My Skills</h3>
                             <br>
                             <p>Hello, my name is Phun Putthea. I am currently a third year student at the Royal University of Phnom Penh. I am looking for a web internship to improve my skills and gain more experience. I have a strong passion for web development and I am actively studying and improving my skills in this field. My goal is to become a skilled web developer and contribute to the ever-evolving digital landscape. </p>
@@ -120,7 +120,7 @@
                     </div>
                     <!-- Skills Section -->
                     <div class="col-lg-6 col-md-12 mb-4">
-                        <div class="list_skills">
+                        <div class="list_skills" data-aos="fade-up" data-aos-delay="500">
                             <h3>My Skills</h3>
                             <br>
                             <div class="row skills-container">
@@ -211,7 +211,7 @@
         <div class="contact_me d-flex flex-column"><br><br><br><br>
             <h1>PORTFOLIO</h1>
             <br><br>
-            <div class="container">
+            <div class="container" data-aos="fade-up" data-aos-delay="500">
                 <section class="gallery">
                     <div class="gallery-item"><img src="Image/image1.png" alt="Gallery item 1"></div>
                     <div class="gallery-item"><img src="Image/image2.png" alt="Gallery item 2"></div>
@@ -235,7 +235,7 @@
         <div class="contact_me  d-flex flex-column"><br><br><br><br>
             <h1>CONTACT ME</h1>
             <br><br>
-            <div class="container" >
+            <div class="container" data-aos="fade-up" data-aos-delay="500">
                 <div class="row g-4">
                     <!-- Contact Info -->
                     <div class="col-lg-6">
@@ -330,6 +330,7 @@
 </html>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
+    AOS.init();
     document.getElementById('downloadBtn').addEventListener('click', function () {
         // Create a link element
         const link = document.createElement('a');
@@ -338,9 +339,9 @@
         link.download = 'PHUN Potthea_CV_Development.pdf';  // Desired file name without path
         link.click();
     });
-
     $(document).ready(function () {
         const form = $("form");
+
         form.on("submit", function (event) {
             // Prevent form submission to handle validation
             event.preventDefault();
